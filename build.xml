@@ -2,10 +2,10 @@
 
 <project name="php_fitnesse_test" basedir="." default="test">
   <target name="test">
-    <phpunit haltonfailure="true" printsummary="true">
+    <phpunit>
       <batchtest>
-        <fileset dir=".">
-          <include name="*Test.php"/>
+        <fileset dir="test">
+          <include name="**/*Test.php"/>
         </fileset>
       </batchtest>
     </phpunit>
